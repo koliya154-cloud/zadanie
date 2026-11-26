@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" style="max-width: 1210px; margin: 0 auto;">
+        <header class="header" style="display: flex; align-items: center; justify-content: space-between;">
+            <div class="both-logo" style="margin: 43px;">
+                <div class="logo" style="display: flex;">
+                    <img src="./icons/logo.svg" alt="logo">
+                    <div class="logo-part2" style="margin-left: 16px;">
+                        <h2>REACT SNEAKERS</h2>
+                        <h4 style="color: grey;">Магазин лучших кроссовок</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vkladki" style="display: flex; gap: 32px; align-items: center;">
+                <a href="#" style="text-decoration: none;">
+                    <div class="basket" style="display: flex; gap: 10px;">
+                        <img src="./icons/basket.svg" alt="">
+                        <p style="color: grey;">0 руб.</p>
+                    </div>
+                </a>
+
+                <a href="./favotite.html" style="text-decoration: none;">
+                    <div class="favorite" style="display: flex; gap: 10px;">
+                        <img src="./icons/favorite.svg" alt="">
+                        <p style="color: grey;">Закладки</p>
+                    </div>
+                </a>
+
+                <a href="./profile.html" style="text-decoration: none;">
+                    <div class="profile" style="display: flex; gap: 10px;">
+                        <img src="./icons/user.svg" alt="">
+                        <p style="color: grey;">Профиль</p>
+                    </div>
+                </a>
+
+            </div>
+        </header>
+        <div class="line" style="border: 1px solid #EAEAEA; width: 100%; margin-top: 25px;"></div>
+
+        <div class="slider" style="margin-top: 50px;">
+            <div class="slides">
+
+                <div class="slide" id="slide1">
+                    <img src="./image/StanSmith.png" alt="Кроссовки">
+                </div>
+
+                <div class="slide" id="slide2">
+                    <img src="./image/StanSmith.png" alt="Кроссовки">
+                </div>
+            </div>
+
+            <div class="slider-buttons">
+                <a href="#slide1" class="prev">❮</a>
+                <a href="#slide2" class="next">❯</a>
+            </div>
+
+            <div class="slider-dots">
+                <a href="#slide1"></a>
+                <a href="#slide2"></a>
+            </div>
+        </div>
+
+        <div class="cross">
+            <h1 style="margin-top: 40px;">Все кроссовки</h1>
+
+
+            <div class="container_input">
+                <input type="text" placeholder="Поиск...">
+                <img src="./icons/loop.svg">
+            </div>
+        </div>
+
+        <!-- боковая -->
+        <div class="overlay" style="display: none;">
+            <div class="cart-sidebar">
+                <h3>Корзина</h3>
+
+                <div class="empty-cart">
+                    <img src="./icons/empty-box.svg" alt="box">
+
+                    <h3>Корзина пустая</h3>
+                    <p>Добавьте хотя бы одну пару кроссовок,
+                        чтобы сделать заказ.</p>
+
+                    <button class="back-button">
+                        ← Вернуться назад
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="cross-aka"></div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

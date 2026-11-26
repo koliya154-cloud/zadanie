@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+    }
+
+    .empty-card {
+        margin-top: 12%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .empty-card img {
+        width: 70px;
+        margin-bottom: 20px;
+    }
+
+    .empty-card h3 {
+        margin-bottom: 10px;
+    }
+
+    .empty-card p {
+        color: #999;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .back-button {
+        margin-top: 41px;
+        border: none;
+        border-radius: 10px;
+        background: #9bdb53;
+        color: white;
+        padding: 12px 25px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="container" style="max-width: 1210px; margin: 0 auto;">
+        <header class="header" style="display: flex; align-items: center; justify-content: space-between;">
+            <div class="both-logo" style="margin: 43px;">
+                <div class="logo" style="display: flex;">
+                    <img src="./icons/logo.svg" alt="logo">
+                    <div class="logo-part2" style="margin-left: 16px;">
+                        <h2>REACT SNEAKERS</h2>
+                        <h4 style="color: grey;">Магазин лучших кроссовок</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vkladki" style="display: flex; gap: 32px; align-items: center;">
+                <a href="#" style="text-decoration: none;">
+                    <div class="basket" style="display: flex; gap: 10px;">
+                        <img src="./icons/basket.svg" alt="">
+                        <p style="color: grey;">0 руб.</p>
+                    </div>
+                </a>
+
+                <a href="#" style="text-decoration: none;">
+                    <div class="favorite" style="display: flex; gap: 10px;">
+                        <img src="./icons/favorite.svg" alt="">
+                        <p style="color: grey;">Закладки</p>
+                    </div>
+                </a>
+
+                <a href="./profile.html" style="text-decoration: none;">
+                    <div class="profile" style="display: flex; gap: 10px;">
+                        <img src="./icons/user.svg" alt="">
+                        <p style="color: grey;">Профиль</p>
+                    </div>
+                </a>
+
+            </div>
+        </header>
+        <div class="line" style="border: 1px solid #EAEAEA; width: 100%; margin-top: 25px;"></div>
+
+        <div class="empty-card">
+            <img src="./icons/sadness.svg">
+
+            <h3>Закладок нет :( </h3>
+            <p>Вы ничего не добавляли в закладки</p>
+
+            <a href="./index.html" class="back-button" style="text-decoration: none;">
+                ← Вернуться назад
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
